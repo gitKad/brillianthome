@@ -1,5 +1,3 @@
-'use strict'
-
 const express = require('express')
 const HueBridge = require('./philipsHueBridge.js')
 
@@ -25,10 +23,6 @@ class Application {
 
   stop(cb) {
     this.server.close(cb)
-  }
-
-  getServer() {
-    return this.server
   }
 }
 
